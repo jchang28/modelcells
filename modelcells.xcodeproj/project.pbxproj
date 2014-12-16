@@ -12,8 +12,11 @@
 		89AD323B1A3FA22300ECD505 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AD323A1A3FA22300ECD505 /* ViewController.m */; };
 		89AD323E1A3FA22300ECD505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AD323C1A3FA22300ECD505 /* Main.storyboard */; };
 		89AD32401A3FA22300ECD505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AD323F1A3FA22300ECD505 /* Images.xcassets */; };
-		89AD32431A3FA22300ECD505 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AD32411A3FA22300ECD505 /* LaunchScreen.xib */; };
 		89AD324F1A3FA22300ECD505 /* modelcellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AD324E1A3FA22300ECD505 /* modelcellsTests.m */; };
+		89AD32611A3FAD6000ECD505 /* ModelTextFieldTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AD325F1A3FAD6000ECD505 /* ModelTextFieldTableViewController.m */; };
+		89AD32621A3FAD6000ECD505 /* ModelTextFieldTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AD32601A3FAD6000ECD505 /* ModelTextFieldTableViewController.xib */; };
+		89AD32651A3FB43100ECD505 /* ModelTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AD32641A3FB43100ECD505 /* ModelTextFieldCell.xib */; };
+		89AD32691A3FC61C00ECD505 /* ModelTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AD32681A3FC61C00ECD505 /* ModelTextFieldCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,15 @@
 		89AD323A1A3FA22300ECD505 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		89AD323D1A3FA22300ECD505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89AD323F1A3FA22300ECD505 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		89AD32421A3FA22300ECD505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		89AD32481A3FA22300ECD505 /* modelcellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = modelcellsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AD324D1A3FA22300ECD505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89AD324E1A3FA22300ECD505 /* modelcellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modelcellsTests.m; sourceTree = "<group>"; };
+		89AD325E1A3FAD6000ECD505 /* ModelTextFieldTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelTextFieldTableViewController.h; path = modelcells/ModelTextFieldTableViewController/ModelTextFieldTableViewController.h; sourceTree = "<group>"; };
+		89AD325F1A3FAD6000ECD505 /* ModelTextFieldTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelTextFieldTableViewController.m; path = modelcells/ModelTextFieldTableViewController/ModelTextFieldTableViewController.m; sourceTree = "<group>"; };
+		89AD32601A3FAD6000ECD505 /* ModelTextFieldTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ModelTextFieldTableViewController.xib; path = modelcells/ModelTextFieldTableViewController/ModelTextFieldTableViewController.xib; sourceTree = "<group>"; };
+		89AD32641A3FB43100ECD505 /* ModelTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ModelTextFieldCell.xib; path = modelcells/ModelTextFieldCell/ModelTextFieldCell.xib; sourceTree = "<group>"; };
+		89AD32671A3FC61C00ECD505 /* ModelTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelTextFieldCell.h; path = modelcells/ModelTextFieldCell/ModelTextFieldCell.h; sourceTree = "<group>"; };
+		89AD32681A3FC61C00ECD505 /* ModelTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelTextFieldCell.m; path = modelcells/ModelTextFieldCell/ModelTextFieldCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +95,7 @@
 				89AD323A1A3FA22300ECD505 /* ViewController.m */,
 				89AD323C1A3FA22300ECD505 /* Main.storyboard */,
 				89AD323F1A3FA22300ECD505 /* Images.xcassets */,
-				89AD32411A3FA22300ECD505 /* LaunchScreen.xib */,
+				89AD326A1A3FC84300ECD505 /* ModelTextField */,
 				89AD32321A3FA22300ECD505 /* Supporting Files */,
 			);
 			path = modelcells;
@@ -117,6 +125,37 @@
 				89AD324D1A3FA22300ECD505 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89AD32631A3FAD6500ECD505 /* ModelTextFieldTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89AD325E1A3FAD6000ECD505 /* ModelTextFieldTableViewController.h */,
+				89AD325F1A3FAD6000ECD505 /* ModelTextFieldTableViewController.m */,
+				89AD32601A3FAD6000ECD505 /* ModelTextFieldTableViewController.xib */,
+			);
+			name = ModelTextFieldTableViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		89AD32661A3FB43700ECD505 /* ModelTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				89AD32671A3FC61C00ECD505 /* ModelTextFieldCell.h */,
+				89AD32681A3FC61C00ECD505 /* ModelTextFieldCell.m */,
+				89AD32641A3FB43100ECD505 /* ModelTextFieldCell.xib */,
+			);
+			name = ModelTextFieldCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		89AD326A1A3FC84300ECD505 /* ModelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				89AD32631A3FAD6500ECD505 /* ModelTextFieldTableViewController */,
+				89AD32661A3FB43700ECD505 /* ModelTextFieldCell */,
+			);
+			name = ModelTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				89AD323E1A3FA22300ECD505 /* Main.storyboard in Resources */,
-				89AD32431A3FA22300ECD505 /* LaunchScreen.xib in Resources */,
+				89AD32651A3FB43100ECD505 /* ModelTextFieldCell.xib in Resources */,
 				89AD32401A3FA22300ECD505 /* Images.xcassets in Resources */,
+				89AD32621A3FAD6000ECD505 /* ModelTextFieldTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				89AD323B1A3FA22300ECD505 /* ViewController.m in Sources */,
+				89AD32691A3FC61C00ECD505 /* ModelTextFieldCell.m in Sources */,
 				89AD32381A3FA22300ECD505 /* AppDelegate.m in Sources */,
 				89AD32351A3FA22300ECD505 /* main.m in Sources */,
+				89AD32611A3FAD6000ECD505 /* ModelTextFieldTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +292,6 @@
 				89AD323D1A3FA22300ECD505 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		89AD32411A3FA22300ECD505 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89AD32421A3FA22300ECD505 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
